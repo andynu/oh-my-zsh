@@ -8,6 +8,6 @@ function prompt_char {
 }
 
 PROMPT='%(?,,%{$fg[red]%}FAIL: $?%{$reset_color%}
-)%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info) %_$(prompt_char) '
+)%{%F{240}%}%n%{%f%F{234}%}@%{%f%F{67}%}%m%{%f%F{234}%}:%{%f%F{187}%}%~%{%f%}$(git_prompt_info) %_$(prompt_char) '
 
 RPROMPT='%{$fg[green]%}[%*]%{$reset_color%}'
